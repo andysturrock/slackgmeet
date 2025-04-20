@@ -1,0 +1,27 @@
+{
+  "name": "slackgmeet",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run clean:all && npm run build:all",
+    "build:all": "npm run build:frontend && npm run build:backend",
+
+    "clean:all": "npm run clean:frontend && npm run clean:backend",
+    "clean:frontend": "rm -rf packages/frontend/build",
+    "clean:backend": "rm -rf packages/backend/dist",
+
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend && mkdir -p packages/backend/dist/frontend && cp -r packages/frontend/build packages/backend/dist/frontend",
+
+    "deploy": "gcloud app deploy",
+
+    "start:backend": "npm run start --workspace=backend",
+    "start:frontend": "npm run start --workspace=frontend"
+  },
+  "devDependencies": {
+    "typescript": "^5.x"
+  }
+}

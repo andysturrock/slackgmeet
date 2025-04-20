@@ -1,0 +1,15 @@
+{
+  "addOns": {
+    "common": {
+      "name": "slackgmeet",
+      "logoUrl": "https://ssl.gstatic.com/docs/script/images/logo/script-64.png"
+    },
+    "meet": {
+      "web": {
+        "sidePanelUri": "https://slackgmeet.nw.r.appspot.com/side-panel",
+        "addOnOrigins": ["https://slackgmeet.nw.r.appspot.com"]
+      }
+    }
+  }
+}
+

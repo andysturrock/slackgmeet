@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "ts-node server.ts"
+  },
+  "dependencies": {
+    "express": "^4.x",
+    "@types/express": "^4.x",
+    "@types/node": "^20.x",
+    "path": "^0.12.x"
+  },
+  "devDependencies": {
+    "ts-node": "^10.x"
+  }
+}
