@@ -6,8 +6,8 @@
     },
     "meet": {
       "web": {
-        "sidePanelUri": "https://slackgmeet.nw.r.appspot.com/side-panel",
-        "addOnOrigins": ["https://slackgmeet.nw.r.appspot.com"]
+        "sidePanelUri": "https://slackgmeet-PROJECT_NUMBER.REGION.run.app/side-panel",
+        "addOnOrigins": ["https://slackgmeet-PROJECT_NUMBER.REGION.run.app"]
       }
     }
   }
